@@ -12,7 +12,7 @@ let state = "firstNum"
 
 function AddNum(num) {
     Tracker()
-    log.textContent = "Added: " + String(num)
+    printLogMessage("Added: " + String(num))
 
     let tempString = String(num)
     viewer.textContent += tempString
@@ -28,7 +28,7 @@ function AddNum(num) {
 }
 
 function SetOperation(oper) {
-    log.textContent = "Set Operation: " + oper
+    printLogMessage("Set Operation: " + oper)
 
     if (oper == "sum"){
         viewer.textContent += " + "
@@ -53,7 +53,7 @@ function SetOperation(oper) {
 }
 
 function Result() {
-    log.textContent = "Result from: " + String(firstNum) + " " + operation + " " + String(secondNum) 
+    printLogMessage("Result from: " + String(firstNum) + " " + operation + " " + String(secondNum))
 
     let finalResult = 0
 
@@ -86,7 +86,7 @@ function Result() {
 }
 
 function Cleaner() {
-    log.textContent = "Clean"
+    printLogMessage("Clear")
 
     let empty = ""
     viewer.textContent = empty
@@ -98,7 +98,11 @@ function Cleaner() {
     Tracker()
 }
 
+function printLogMessage(msg) {
+    //log.textContent = msg
+}
+
 function Tracker() {
     let tracker = document.getElementById("tracker")
-    tracker.textContent = "FirstNum = " + String(firstNum) + " || Operation = " + operation  + " || SecondNum = " + String(secondNum)
+    //tracker.textContent = "FirstNum = " + String(firstNum) + " || Operation = " + operation  + " || SecondNum = " + String(secondNum)
 }

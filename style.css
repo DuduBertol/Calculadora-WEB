@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #dabd00;
+    padding: 1em;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+header p {
+    font-size: small;
+}
+
+body {
+    background-color:#e9e1b2;
+    text-align: center;
+    font-family: "Cabin", sans-serif;
+}
+
+textarea {
+    background-color: #dabd00;
+    padding: 0.2em;
+    text-align: center;
+    height: 25px;
+    width: 150px;
+    border-color: black;
+    border-radius: 5px;
+    font-family: "Cabin", sans-serif;
+}
+
+button {
+    margin: 0.1em;
+    background-color: #e4d04e;
+    padding: 0.2em;
+    text-align: center;
+    height: 25px;
+    width: 25px;
+    border-color: black;
+    border-radius: 5px;
+    font-family: "Cabin", sans-serif;
+    
+}
